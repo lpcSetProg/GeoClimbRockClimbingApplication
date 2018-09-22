@@ -18,11 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lexie-barnhorn-604505-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-wC-sdh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geo Climb" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q65-ab-Ndy">
-                                <rect key="frame" x="99" y="140" width="176" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Geo Climb" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q65-ab-Ndy">
+                                <rect key="frame" x="16" y="147" width="277" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <color key="textColor" red="0.97680455450000003" green="0.95955729833436298" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -30,17 +27,8 @@
                         </subviews>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q65-ab-Ndy" secondAttribute="trailing" constant="100" id="4sz-Ou-2qS"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9ad-cN-No9"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jrg-xW-bnL"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Nq7-5e-p4i"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OBW-xM-39z"/>
                             <constraint firstItem="q65-ab-Ndy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="50" id="TF4-Vb-eoR"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZMr-M8-Uvx"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a07-9q-eCI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q65-ab-Ndy" secondAttribute="bottom" constant="480" id="egf-Mw-Irb"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nbN-dQ-dq4"/>
-                            <constraint firstItem="J9l-wC-sdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nec-3J-nnD"/>
                             <constraint firstItem="q65-ab-Ndy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="t1r-PP-MEm"/>
                             <constraint firstItem="q65-ab-Ndy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="t9L-sL-avj"/>
                         </constraints>
@@ -52,7 +40,4 @@
             <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="lexie-barnhorn-604505-unsplash.jpg" width="4000" height="6000"/>
-    </resources>
 </document>
