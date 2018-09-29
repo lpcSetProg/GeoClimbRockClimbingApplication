@@ -19,6 +19,7 @@
 		4F5C6846215FD74C002C5339 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C6845215FD74C002C5339 /* TabBarController.swift */; };
 		B222A30D2160095A009BE833 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222A30C2160095A009BE833 /* TableViewController.swift */; };
 		B222A30F21600993009BE833 /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222A30E21600992009BE833 /* RoutesViewController.swift */; };
+		B222A3112160171D009BE833 /* HangTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222A3102160171D009BE833 /* HangTimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4F5C6845215FD74C002C5339 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B222A30C2160095A009BE833 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B222A30E21600992009BE833 /* RoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
+		B222A3102160171D009BE833 /* HangTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangTimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				4F196AA32141B176004A4E87 /* AppDelegate.swift */,
 				4F196AA52141B176004A4E87 /* HomeViewController.swift */,
 				4F196AA72141B176004A4E87 /* Main.storyboard */,
+				B222A3102160171D009BE833 /* HangTimerViewController.swift */,
 				4F196AAD2141B177004A4E87 /* Assets.xcassets */,
 				4F196AAF2141B177004A4E87 /* LaunchScreen.storyboard */,
 				4F196AB22141B177004A4E87 /* Info.plist */,
@@ -277,6 +280,7 @@
 				4F196AAC2141B176004A4E87 /* GeoClimb.xcdatamodeld in Sources */,
 				B222A30F21600993009BE833 /* RoutesViewController.swift in Sources */,
 				4F5C6846215FD74C002C5339 /* TabBarController.swift in Sources */,
+				B222A3112160171D009BE833 /* HangTimerViewController.swift in Sources */,
 				4F56BB652156A1EF00857B50 /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

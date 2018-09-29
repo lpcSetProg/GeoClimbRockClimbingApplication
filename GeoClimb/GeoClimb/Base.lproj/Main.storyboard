@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,16 +38,6 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF1-gS-rjV">
-                                <rect key="frame" x="21" y="77" width="332" height="502"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Welcome to Geo Climb, your friendly neighbourhood Rock Climbing Application! This is the home page. In the future, it will contain statistical information, such as activity tracking.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -75,11 +66,11 @@
             </objects>
             <point key="canvasLocation" x="-540" y="37"/>
         </scene>
-        <!--Log-->
+        <!--Hang Timer-->
         <scene sceneID="cw1-E6-49p">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Lv-HU-hIw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Log" id="BVr-h1-IyU"/>
+                    <tabBarItem key="tabBarItem" title="Hang Timer" id="BVr-h1-IyU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l53-xi-Q3F">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -113,56 +104,71 @@
             </objects>
             <point key="canvasLocation" x="1361" y="936"/>
         </scene>
-        <!--View Controller-->
+        <!--Hang Timer-->
         <scene sceneID="e3l-8g-8g5">
             <objects>
-                <viewController id="rAM-1x-d1Q" sceneMemberID="viewController">
+                <viewController id="rAM-1x-d1Q" customClass="HangTimerViewController" customModule="GeoClimb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0vU-DW-c0u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-wd-avb">
-                                <rect key="frame" x="175" y="170" width="25" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-wd-avb">
+                                <rect key="frame" x="29" y="152" width="315" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="77"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-0W-rNC">
-                                <rect key="frame" x="67" y="318" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-0W-rNC">
+                                <rect key="frame" x="0.0" y="375" width="186" height="243"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="a9S-ig-Vn3"/>
+                                </constraints>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="button_Start:" destination="rAM-1x-d1Q" eventType="touchUpInside" id="eIB-KB-Lr4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBI-L1-cVv">
-                                <rect key="frame" x="213" y="318" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="PAUSE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-iN-CBM">
-                                <rect key="frame" x="135" y="404" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-iN-CBM">
+                                <rect key="frame" x="205" y="375" width="170" height="249"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="wZ9-Un-KsQ"/>
+                                </constraints>
                                 <state key="normal" title="RESET">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="button_Reset:" destination="rAM-1x-d1Q" eventType="touchUpInside" id="RVn-wd-cHM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="leading" secondItem="0vU-DW-c0u" secondAttribute="leading" id="2LR-5E-c7W"/>
+                            <constraint firstAttribute="trailing" secondItem="EPQ-iN-CBM" secondAttribute="trailing" id="5e6-ZQ-CbX"/>
+                            <constraint firstItem="xfR-wd-avb" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="88" id="Haw-i7-YMP"/>
+                            <constraint firstItem="xfR-wd-avb" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="29" id="KNW-Sg-DKl"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="bottom" secondItem="FYk-Qn-acn" secondAttribute="bottom" id="U15-70-G1s"/>
+                            <constraint firstItem="EPQ-iN-CBM" firstAttribute="leading" secondItem="6F8-0W-rNC" secondAttribute="trailing" constant="19" id="YUC-cT-TSJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EPQ-iN-CBM" secondAttribute="bottom" constant="-6" id="ji1-9D-UHz"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="top" secondItem="EPQ-iN-CBM" secondAttribute="top" id="k3a-v8-yvF"/>
+                            <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="xfR-wd-avb" secondAttribute="trailing" constant="31" id="tmk-6Q-KWp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FYk-Qn-acn"/>
                     </view>
-                    <navigationItem key="navigationItem" id="keC-6l-WWn"/>
+                    <navigationItem key="navigationItem" title="Hang Timer" id="keC-6l-WWn"/>
+                    <connections>
+                        <outlet property="label_Time" destination="xfR-wd-avb" id="qGj-9o-IWe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crq-u8-Js7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2433" y="-944"/>
+            <point key="canvasLocation" x="2432.8000000000002" y="-944.07796101949032"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Routes-->
         <scene sceneID="hpd-jY-IFH">
             <objects>
                 <tableViewController id="cr5-m5-t9z" customClass="TableViewController" customModule="GeoClimb3" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,16 +176,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z4i-du-y7e">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="DLr-0F-Bo0">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DLr-0F-Bo0" id="fhR-8K-ELW">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -192,14 +191,14 @@
                             <outlet property="delegate" destination="cr5-m5-t9z" id="IpO-to-vSr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5CC-my-5f1"/>
+                    <navigationItem key="navigationItem" title="Routes" id="5CC-my-5f1"/>
                     <connections>
                         <segue destination="Czc-54-lYP" kind="show" identifier="segue_routes" id="HNZ-Y4-5gS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BR-lO-uuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2367" y="936"/>
+            <point key="canvasLocation" x="2365.5999999999999" y="935.98200899550227"/>
         </scene>
         <!--Routes View Controller-->
         <scene sceneID="Eyu-8b-CqV">

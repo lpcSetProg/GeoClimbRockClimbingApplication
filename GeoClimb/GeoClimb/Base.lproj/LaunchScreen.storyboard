@@ -18,26 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Geo Climb" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q65-ab-Ndy">
-                                <rect key="frame" x="16" y="147" width="277" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <color key="textColor" red="0.97680455450000003" green="0.95955729833436298" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FYi-oU-Rv1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="q65-ab-Ndy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="50" id="TF4-Vb-eoR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q65-ab-Ndy" secondAttribute="bottom" constant="480" id="egf-Mw-Irb"/>
-                            <constraint firstItem="q65-ab-Ndy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="t1r-PP-MEm"/>
-                            <constraint firstItem="q65-ab-Ndy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="t9L-sL-avj"/>
+                            <constraint firstItem="FYi-oU-Rv1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="6zn-LB-bGR"/>
+                            <constraint firstItem="FYi-oU-Rv1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="I7b-eS-WrC"/>
+                            <constraint firstItem="FYi-oU-Rv1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Vd1-PP-2me"/>
+                            <constraint firstAttribute="trailing" secondItem="FYi-oU-Rv1" secondAttribute="trailing" id="pOI-fA-0jh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
+            <point key="canvasLocation" x="50.399999999999999" y="373.76311844077964"/>
         </scene>
     </scenes>
 </document>
