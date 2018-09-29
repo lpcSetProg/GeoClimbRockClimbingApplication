@@ -15,8 +15,17 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        let attrsNormal = [
+            NSAttributedStringKey.foregroundColor: UIColor.black,
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 19.0)
+        ]
+        let attrsSelected = [
+            NSAttributedStringKey.foregroundColor: UIColor.red,
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 19.0)
+        ]
+        UITabBarItem.appearance().setTitleTextAttributes(attrsNormal, for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes(attrsSelected, for: .selected)
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
     
     override func didReceiveMemoryWarning() {
