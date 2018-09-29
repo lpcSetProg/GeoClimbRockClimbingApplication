@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4F196AA42141B176004A4E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AA32141B176004A4E87 /* AppDelegate.swift */; };
-		4F196AA62141B176004A4E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AA52141B176004A4E87 /* ViewController.swift */; };
+		4F196AA62141B176004A4E87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AA52141B176004A4E87 /* HomeViewController.swift */; };
 		4F196AA92141B176004A4E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F196AA72141B176004A4E87 /* Main.storyboard */; };
 		4F196AAC2141B176004A4E87 /* GeoClimb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AAA2141B176004A4E87 /* GeoClimb.xcdatamodeld */; };
 		4F196AAE2141B177004A4E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F196AAD2141B177004A4E87 /* Assets.xcassets */; };
 		4F196AB12141B177004A4E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F196AAF2141B177004A4E87 /* LaunchScreen.storyboard */; };
 		4F196ABC2141B177004A4E87 /* GeoClimbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196ABB2141B177004A4E87 /* GeoClimbTests.swift */; };
 		4F196AC72141B177004A4E87 /* GeoClimbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AC62141B177004A4E87 /* GeoClimbUITests.swift */; };
+		4F56BB652156A1EF00857B50 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56BB642156A1EF00857B50 /* LogViewController.swift */; };
+		4F5C6846215FD74C002C5339 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C6845215FD74C002C5339 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		4F196AA02141B176004A4E87 /* GeoClimb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoClimb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F196AA32141B176004A4E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F196AA52141B176004A4E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F196AA52141B176004A4E87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F196AA82141B176004A4E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F196AAB2141B176004A4E87 /* GeoClimb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoClimb.xcdatamodel; sourceTree = "<group>"; };
 		4F196AAD2141B177004A4E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		4F196AC22141B177004A4E87 /* GeoClimbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoClimbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F196AC62141B177004A4E87 /* GeoClimbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoClimbUITests.swift; sourceTree = "<group>"; };
 		4F196AC82141B177004A4E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F56BB642156A1EF00857B50 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		4F5C6845215FD74C002C5339 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				4F196AA32141B176004A4E87 /* AppDelegate.swift */,
-				4F196AA52141B176004A4E87 /* ViewController.swift */,
+				4F196AA52141B176004A4E87 /* HomeViewController.swift */,
 				4F196AA72141B176004A4E87 /* Main.storyboard */,
 				4F196AAD2141B177004A4E87 /* Assets.xcassets */,
 				4F196AAF2141B177004A4E87 /* LaunchScreen.storyboard */,
 				4F196AB22141B177004A4E87 /* Info.plist */,
 				4F196AAA2141B176004A4E87 /* GeoClimb.xcdatamodeld */,
+				4F56BB642156A1EF00857B50 /* LogViewController.swift */,
+				4F5C6845215FD74C002C5339 /* TabBarController.swift */,
 			);
 			path = GeoClimb;
 			sourceTree = "<group>";
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F196AA62141B176004A4E87 /* ViewController.swift in Sources */,
+				4F196AA62141B176004A4E87 /* HomeViewController.swift in Sources */,
 				4F196AA42141B176004A4E87 /* AppDelegate.swift in Sources */,
 				4F196AAC2141B176004A4E87 /* GeoClimb.xcdatamodeld in Sources */,
+				4F5C6846215FD74C002C5339 /* TabBarController.swift in Sources */,
+				4F56BB652156A1EF00857B50 /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

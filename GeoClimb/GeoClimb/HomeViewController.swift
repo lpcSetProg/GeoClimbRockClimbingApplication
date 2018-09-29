@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeController.swift
 //  GeoClimb
 //
 //  Created by Carl Wilson on 2018-09-06.
@@ -19,8 +19,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-   
-
 }
 
