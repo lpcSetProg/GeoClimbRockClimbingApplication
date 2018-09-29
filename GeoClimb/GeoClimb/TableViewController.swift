@@ -8,11 +8,17 @@
 
 import UIKit
 
-var routes = ["Easy Peasy", "Nomads Cave","Farewell to Arms"]
-var routesDesc = ["Located near corner of gym. Climbing involving technical moves and protective hardware in case of a fall. Often leads to damadge.", "Would die if I fell? Probably but the ground is bumpy. Use a rope, but don't place protection up too high.", "After thorough inspection you conclude this move is obviously impossible; however, occasionally someone actually accomplishes it. Since there is nothing for a handhold, grab it with both hands."]
-var routesHeight = ["5 meters", "6 meters", "9 meters"]
-var routesRating = ["5.5", "5.7", "5.11a+"]
-var routesLocation = ["Grand River Rocks", "Grand River Rocks", "Grand River Rocks"]
+var routes = ["Easy Peasy", "Nomads Cave","Farewell to Arms", "The Goat Face", "Alpaca Hill", ]
+var routesDesc = ["Located near corner of gym. Climbing involving technical moves and protective hardware in case of a fall. Often leads to damadge.",
+                  "Would die if I fell? Probably but the ground is bumpy. Use a rope, but don't place protection up too high.",
+                  "After thorough inspection you conclude this move is obviously impossible; however, occasionally someone actually accomplishes it. Since there is nothing for a handhold, grab it with both hands.",
+                  "",
+                  ""]
+var routesHeight = ["5 meters", "6 meters", "9 meters", "4 Meters", "3.4 Meters"]
+var routesRating = ["5.5", "5.7", "5.11a+", "5.10a", "5.10c"]
+var routesLocation = ["Grand River Rocks", "Grand River Rocks", "Grand River Rocks", "The Core Climbing Gym", "The Core Climbing Gym"]
+
+
 
 var myIndex = 0
 

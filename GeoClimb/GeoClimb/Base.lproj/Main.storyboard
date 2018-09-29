@@ -119,10 +119,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-0W-rNC">
-                                <rect key="frame" x="0.0" y="375" width="186" height="243"/>
+                                <rect key="frame" x="0.0" y="375" width="197" height="243"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="a9S-ig-Vn3"/>
+                                    <constraint firstAttribute="height" constant="243" id="okC-e8-25A"/>
                                 </constraints>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,10 +132,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-iN-CBM">
-                                <rect key="frame" x="205" y="375" width="170" height="249"/>
+                                <rect key="frame" x="197" y="375" width="178" height="249"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="wZ9-Un-KsQ"/>
+                                    <constraint firstAttribute="width" constant="178" id="CHf-4q-gQw"/>
                                 </constraints>
                                 <state key="normal" title="RESET">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -147,15 +147,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="leading" secondItem="0vU-DW-c0u" secondAttribute="leading" id="2LR-5E-c7W"/>
-                            <constraint firstAttribute="trailing" secondItem="EPQ-iN-CBM" secondAttribute="trailing" id="5e6-ZQ-CbX"/>
-                            <constraint firstItem="xfR-wd-avb" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="88" id="Haw-i7-YMP"/>
-                            <constraint firstItem="xfR-wd-avb" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="29" id="KNW-Sg-DKl"/>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="bottom" secondItem="FYk-Qn-acn" secondAttribute="bottom" id="U15-70-G1s"/>
-                            <constraint firstItem="EPQ-iN-CBM" firstAttribute="leading" secondItem="6F8-0W-rNC" secondAttribute="trailing" constant="19" id="YUC-cT-TSJ"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="EPQ-iN-CBM" secondAttribute="bottom" constant="-6" id="ji1-9D-UHz"/>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="top" secondItem="EPQ-iN-CBM" secondAttribute="top" id="k3a-v8-yvF"/>
-                            <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="xfR-wd-avb" secondAttribute="trailing" constant="31" id="tmk-6Q-KWp"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="top" secondItem="EPQ-iN-CBM" secondAttribute="top" id="CRV-fc-pMq"/>
+                            <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="xfR-wd-avb" secondAttribute="trailing" constant="31" id="NRH-jp-IVj"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="leading" secondItem="0vU-DW-c0u" secondAttribute="leading" id="P7j-dU-sjB"/>
+                            <constraint firstItem="EPQ-iN-CBM" firstAttribute="leading" secondItem="6F8-0W-rNC" secondAttribute="trailing" id="QGz-zj-dB7"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="bottom" secondItem="FYk-Qn-acn" secondAttribute="bottom" id="ScJ-Pm-QYV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EPQ-iN-CBM" secondAttribute="bottom" constant="-6" id="UcN-Y4-XLC"/>
+                            <constraint firstAttribute="trailing" secondItem="EPQ-iN-CBM" secondAttribute="trailing" id="qSd-vz-9f7"/>
+                            <constraint firstItem="xfR-wd-avb" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="29" id="vok-Cb-e6F"/>
+                            <constraint firstItem="xfR-wd-avb" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="88" id="xrz-Qp-t4G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FYk-Qn-acn"/>
                     </view>
