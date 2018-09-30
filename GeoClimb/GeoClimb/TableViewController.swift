@@ -1,10 +1,11 @@
-//
-//  TableViewController.swift
-//  GeoClimb3
-//
-//  Created by Lev Cocarell on 2018-09-28.
-//  Copyright © 2018 Quality Overload 2.0. All rights reserved.
-//
+/*
+ * FILE : TableViewController.swift
+ * PROJECT : PROG3230 - Mobile Application Development II - Assignment 1
+ * PROGRAMMERS : David Pitter, Lev Cocarell, Carl Wilson, Bobby Vu
+ * FIRST VERSION : 2018-09-15
+ * DESCRIPTION :
+ * This file contains the source code for
+ */
 
 import UIKit
 
@@ -16,7 +17,7 @@ var routesDesc = ["Located near corner of gym. Climbing involving technical move
                   ""]
 var routesHeight = ["5 meters", "6 meters", "9 meters", "4 Meters", "3.4 Meters"]
 var routesRating = ["5.5", "5.7", "5.11a+", "5.10a", "5.10c"]
-var routesLocation = ["Grand River Rocks", "Grand River Rocks", "Grand River Rocks", "The Core Climbing Gym", "The Core Climbing Gym"]
+var routesLocation = ["Kitchener, On", "Kitchener, On", "London, On", "Tobermory, ON", "Kitchener, ON"]
 
 
 

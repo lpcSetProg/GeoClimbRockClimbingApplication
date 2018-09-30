@@ -1,19 +1,17 @@
-//
-//  ViewController.swift
-//  GeoClimb3
-//
-//  Created by Lev Cocarell on 2018-09-28.
-//  Copyright © 2018 Quality Overload 2.0. All rights reserved.
-//
+/*
+ * FILE : ViewController.swift
+ * PROJECT : PROG3230 - Mobile Application Development II - Assignment 1
+ * PROGRAMMERS : David Pitter, Lev Cocarell, Carl Wilson, Bobby Vu
+ * FIRST VERSION : 2018-09-15
+ * DESCRIPTION :
+ * This file contains the source code for
+ */
 
 import UIKit
 
 class RoutesViewController: UIViewController {
     
     
-    
-    
-
         @IBOutlet weak var output: UILabel!
     
         @IBAction func `switch`(_ sender: UISwitch) {
@@ -25,7 +23,6 @@ class RoutesViewController: UIViewController {
                 {
                     output.text = "Unattempted."
                 }
-            
         }
     
         @IBOutlet weak var label_RoutesTitle: UILabel!

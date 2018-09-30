@@ -1,10 +1,11 @@
-//
-//  TabBarController.swift
-//  GeoClimb
-//
-//  Created by Carl Wilson on 2018-09-06.
-//  Copyright © 2018 qualityoverload2. All rights reserved.
-//
+/*
+ * FILE : TabBarController.swift
+ * PROJECT : PROG3230 - Mobile Application Development II - Assignment 1
+ * PROGRAMMERS : David Pitter, Lev Cocarell, Carl Wilson, Bobby Vu
+ * FIRST VERSION : 2018-09-15
+ * DESCRIPTION :
+ * This file contains the source code for
+ */
 
 import UIKit
 
@@ -20,7 +21,7 @@ class TabBarController: UITabBarController {
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 19.0)
         ]
         let attrsSelected = [
-            NSAttributedStringKey.foregroundColor: UIColor.red,
+            NSAttributedStringKey.foregroundColor: UIColor.lightGray,
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 19.0)
         ]
         UITabBarItem.appearance().setTitleTextAttributes(attrsNormal, for: .normal)
