@@ -1,10 +1,10 @@
 /*
- * FILE : ViewController.swift
+ * FILE : RoutesViewController.swift
  * PROJECT : PROG3230 - Mobile Application Development II - Assignment 1
  * PROGRAMMERS : David Pitter, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
- * This file contains the source code for
+ * This file contains the source code for the routes view controller.
  */
 
 import UIKit
@@ -13,6 +13,7 @@ class RoutesViewController: UIViewController {
     
     
         @IBOutlet weak var output: UILabel!
+    
     
         @IBAction func `switch`(_ sender: UISwitch) {
                 if (sender.isOn == true)

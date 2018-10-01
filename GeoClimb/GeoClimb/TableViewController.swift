@@ -4,20 +4,20 @@
  * PROGRAMMERS : David Pitter, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
- * This file contains the source code for
+ * This file contains the source code for the table view controller.
  */
 
 import UIKit
 
 var routes = ["Easy Peasy", "Nomads Cave","Farewell to Arms", "The Goat Face", "Alpaca Hill", ]
-var routesDesc = ["Located near corner of gym. Climbing involving technical moves and protective hardware in case of a fall. Often leads to damadge.",
-                  "Would die if I fell? Probably but the ground is bumpy. Use a rope, but don't place protection up too high.",
-                  "After thorough inspection you conclude this move is obviously impossible; however, occasionally someone actually accomplishes it. Since there is nothing for a handhold, grab it with both hands.",
-                  "",
-                  ""]
+var routesDesc = ["Located near back corner of Grand River Rocks gym in Kitchener. This climbing involves minimal technical moves. Good route for beginners.",
+                  "Located near back corner of Grand River Rocks gym in Kitchener. This climbing involves more complicated technical moves. Good intermediate route. Pay attention.",
+                  "Located near front of London rock climbing gym in Kitchener. This climbing involves very complicated technical moves. Advanced route. Pay very close attention.",
+                  "Located near front of Tobermory rock climbing gym. This climbing involves very complicated technical moves. Advanced route. Good luck -- you will need it!.",
+                  "Located near back corner of Grand River Rocks gym in Kitchener. Super difficult. Bring lunch -- you will be there all day."]
 var routesHeight = ["5 meters", "6 meters", "9 meters", "4 Meters", "3.4 Meters"]
 var routesRating = ["5.5", "5.7", "5.11a+", "5.10a", "5.10c"]
-var routesLocation = ["Kitchener, On", "Kitchener, On", "London, On", "Tobermory, ON", "Kitchener, ON"]
+var routesLocation = ["Kitchener", "Kitchener", "London", "Tobermory", "Kitchener"]
 
 
 

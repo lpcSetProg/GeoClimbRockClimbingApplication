@@ -18,9 +18,11 @@ class HangTimerViewController: UIViewController {
     var timer = Timer()
     
     
+    
     @IBAction func button_Start(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HangTimerViewController.timeTracker), userInfo: nil, repeats: true)
     }
+    
     
     @IBAction func button_Stop(_ sender: Any) {
         time = 0
@@ -29,10 +31,7 @@ class HangTimerViewController: UIViewController {
     }
     
     
-  
-    
     // function called but start button timer
-    // NEEDS COMMENTS
     @objc func timeTracker()
     {
         time += 1
