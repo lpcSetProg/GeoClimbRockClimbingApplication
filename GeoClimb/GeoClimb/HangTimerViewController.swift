@@ -29,11 +29,7 @@ class HangTimerViewController: UIViewController {
     }
     
     
-    @IBAction func button_Reset(_ sender: Any) {
-       timer.invalidate()
-       time = 0
-       label_Time.text = ("0")
-    }
+  
     
     // function called but start button timer
     // NEEDS COMMENTS
