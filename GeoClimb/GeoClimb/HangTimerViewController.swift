@@ -1,4 +1,3 @@
-
 /*
  * FILE : HangTimerViewController.swift
  * PROJECT : PROG3230 - Mobile Application Development II - Assignment 1
@@ -23,7 +22,12 @@ class HangTimerViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HangTimerViewController.timeTracker), userInfo: nil, repeats: true)
     }
     
-
+    @IBAction func button_Stop(_ sender: Any) {
+        time = 0
+        label_Time.text = ("0")
+         timer.invalidate()
+    }
+    
     
     @IBAction func button_Reset(_ sender: Any) {
        timer.invalidate()
