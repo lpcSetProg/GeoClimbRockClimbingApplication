@@ -14,7 +14,6 @@ class RoutesViewController: UIViewController {
     
         @IBOutlet weak var output: UILabel!
     
-    
         @IBAction func `switch`(_ sender: UISwitch) {
                 if (sender.isOn == true)
                 {

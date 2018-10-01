@@ -18,7 +18,7 @@ class TabBarController: UITabBarController {
      
         let attrsNormal = [
             NSAttributedStringKey.foregroundColor: UIColor.black,
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 19.0)
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0)
         ]
         let attrsSelected = [
             NSAttributedStringKey.foregroundColor: UIColor.lightGray,
