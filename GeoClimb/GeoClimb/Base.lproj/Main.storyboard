@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -311,23 +311,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-Kb-7fo">
-                                <rect key="frame" x="0.0" y="64" width="375" height="313"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-Kb-7fo">
+                                <rect key="frame" x="-2125" y="64" width="2500" height="313"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-0W-rNC">
-                                <rect key="frame" x="0.0" y="375" width="191" height="243"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="okC-e8-25A"/>
-                                </constraints>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="START" backgroundImage="blue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="button_Start:" destination="rAM-1x-d1Q" eventType="touchUpInside" id="eIB-KB-Lr4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-wd-avb">
                                 <rect key="frame" x="27" y="224" width="315" height="92"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="77"/>
@@ -335,7 +321,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-Ng-WBb">
-                                <rect key="frame" x="189" y="375" width="186" height="243"/>
+                                <rect key="frame" x="187.5" y="377" width="187.5" height="241"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Stop/Save"/>
                                 <connections>
@@ -348,23 +334,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-0W-rNC">
+                                <rect key="frame" x="0.0" y="377" width="189" height="241"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="START" backgroundImage="blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_Start:" destination="rAM-1x-d1Q" eventType="touchUpInside" id="eIB-KB-Lr4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FOB-Ng-WBb" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="189" id="0Gw-Zm-caa"/>
                             <constraint firstItem="FYk-Qn-acn" firstAttribute="bottom" secondItem="NVg-Kb-7fo" secondAttribute="bottom" constant="241" id="9F1-Yu-Wqs"/>
-                            <constraint firstItem="NVg-Kb-7fo" firstAttribute="leading" secondItem="6F8-0W-rNC" secondAttribute="leading" id="IYy-8q-an9"/>
                             <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="xfR-wd-avb" secondAttribute="trailing" constant="33" id="NRH-jp-IVj"/>
-                            <constraint firstAttribute="trailing" secondItem="FOB-Ng-WBb" secondAttribute="trailing" id="P2J-oJ-HKf"/>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="leading" secondItem="0vU-DW-c0u" secondAttribute="leading" id="P7j-dU-sjB"/>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="bottom" secondItem="FYk-Qn-acn" secondAttribute="bottom" id="ScJ-Pm-QYV"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="top" secondItem="NVg-Kb-7fo" secondAttribute="bottom" id="QFF-Mo-QkV"/>
+                            <constraint firstAttribute="bottom" secondItem="6F8-0W-rNC" secondAttribute="bottom" constant="49" id="QY7-oL-I6h"/>
+                            <constraint firstItem="FOB-Ng-WBb" firstAttribute="top" secondItem="NVg-Kb-7fo" secondAttribute="bottom" id="Rnd-G1-cBd"/>
+                            <constraint firstItem="FOB-Ng-WBb" firstAttribute="width" secondItem="0vU-DW-c0u" secondAttribute="width" multiplier="0.5" id="XVI-C5-0dF"/>
+                            <constraint firstItem="FOB-Ng-WBb" firstAttribute="trailing" secondItem="FYk-Qn-acn" secondAttribute="trailing" id="bWe-Nq-rjO"/>
                             <constraint firstItem="vuH-Jy-KaQ" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="64" id="ebt-kL-9Sw"/>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="top" secondItem="FOB-Ng-WBb" secondAttribute="top" id="f1e-y1-T2X"/>
-                            <constraint firstItem="6F8-0W-rNC" firstAttribute="baseline" secondItem="FOB-Ng-WBb" secondAttribute="firstBaseline" id="jQm-hn-mnx"/>
-                            <constraint firstItem="NVg-Kb-7fo" firstAttribute="trailing" secondItem="FOB-Ng-WBb" secondAttribute="trailing" id="qsL-kP-ZOy"/>
+                            <constraint firstItem="6F8-0W-rNC" firstAttribute="width" secondItem="0vU-DW-c0u" secondAttribute="width" multiplier="0.5" id="gxq-NB-iPI"/>
+                            <constraint firstItem="FOB-Ng-WBb" firstAttribute="bottom" secondItem="0vU-DW-c0u" secondAttribute="bottom" constant="-49" id="o8e-jZ-A35"/>
                             <constraint firstItem="vuH-Jy-KaQ" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="80" id="vmA-El-dZY"/>
                             <constraint firstItem="xfR-wd-avb" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="27" id="vok-Cb-e6F"/>
-                            <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="6F8-0W-rNC" secondAttribute="trailing" constant="184" id="xGJ-bU-c4m"/>
                             <constraint firstItem="xfR-wd-avb" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="160" id="xrz-Qp-t4G"/>
                             <constraint firstItem="NVg-Kb-7fo" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" id="zMU-Yl-qYG"/>
                         </constraints>
