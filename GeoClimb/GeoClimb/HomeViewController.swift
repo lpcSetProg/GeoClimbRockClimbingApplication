@@ -4,7 +4,8 @@
  * PROGRAMMERS : David Pitters, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
- * This file contains the source code for the home page 
+ * This file contains the source code for the HomeViewController which currently acts as our home
+ * page. This page is purely read only right now - but we plan on doing more with it in the future.
  */
 
 import UIKit
