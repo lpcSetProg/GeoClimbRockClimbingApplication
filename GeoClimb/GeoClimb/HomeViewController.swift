@@ -1,5 +1,5 @@
 /*
- * FILE : GuideViewController.swift
+ * FILE : HomeViewController.swift
  * PROJECT : PROG3230 - Mobile Application Development II - Assignment 1
  * PROGRAMMERS : David Pitters, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
