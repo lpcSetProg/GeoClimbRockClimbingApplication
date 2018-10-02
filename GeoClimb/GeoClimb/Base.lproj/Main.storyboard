@@ -31,7 +31,7 @@
         <!--Personalise Application-->
         <scene sceneID="QY0-LO-pF9">
             <objects>
-                <viewController id="VOT-60-epk" customClass="GuideViewController" customModule="GeoClimb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VOT-60-epk" customClass="PersonalizeViewController" customModule="GeoClimb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BdD-Qp-Jt8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

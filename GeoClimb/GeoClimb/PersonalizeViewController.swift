@@ -9,7 +9,7 @@
 
 import UIKit
 
-class GuideViewController: UIViewController {
+class PersonalizeViewController: UIViewController {
   
     @IBOutlet weak var label_Name: UILabel!
  
