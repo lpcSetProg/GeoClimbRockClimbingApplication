@@ -26,8 +26,8 @@ class HangTimerViewController: UIViewController {
     
     @IBAction func button_Stop(_ sender: Any) {
         time = 0
-        label_Time.text = ("0")
          timer.invalidate()
+         label_Time.text = ("0")
     }
     
     
