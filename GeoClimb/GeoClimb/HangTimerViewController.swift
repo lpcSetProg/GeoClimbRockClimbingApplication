@@ -18,26 +18,36 @@ class HangTimerViewController: UIViewController {
     
     
     var time = 0.00  // var time us used to keep track of user's time
-    weak var timer = Timer() // instantiating Swift's timer class
-    
-    // This button starts the hang timer caller by assigning the scheduledTimer method to timer object.
-    // Schedule timer creates a new timer and schedules it on the current run loop. It uses our hangTimeTracker method as the selector, to keep track of user's hang time.
+    var timer = Timer() // instantiating Swift's timer class
+    var paused = false
+    // This event starts the hang timer caller by assigning the scheduledTimer method to timer object.
+    @IBOutlet weak var button_start: UIButton!
+    // Schedule timer creates a new timer and schedules it on the current run loop.
+    // It uses our hangTimeTracker method as the selector, to keep track of user's hang time.
     @IBAction func button_Start(_ sender: Any) {
+        
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(HangTimerViewController.hangTimeTracker), userInfo: nil, repeats: true)
+        button_start.isEnabled = false //Do not allow the start button to be clicked again
+        paused = false
     }
     
-    // This button sets the user's hang time to zero, and invalidates the timer method.
+    // This event sets the user's hang time to zero, and invalidates the timer method.
     // Invalidate stops the timer from ever firing again and requests its removal from its run loop. - Apple Documentation
     @IBAction func button_Stop(_ sender: Any) {
         // User's time is displayed to label
-        //If the timer is stopped, reset it to 0
+        //If the timer is paused, reset it to 0
         //Otherwise, pause the timer
-        if (timer == nil){
+        if (paused){
+            //Reset the timer
             time = 0.00
             label_Time.text = ("0.00")
+            paused = false
         } else {
-            timer?.invalidate()
+            timer.invalidate()
+            paused = true
         }
+        button_start.isEnabled = true;
+        
     }
     
     // Formats a number to have a maximum of 2 digits
