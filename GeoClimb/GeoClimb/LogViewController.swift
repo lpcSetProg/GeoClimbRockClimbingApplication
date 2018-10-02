@@ -4,7 +4,7 @@
  * PROGRAMMERS : David Pitters, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
- * This file contains the source code for
+ * This file contains the source code for a future feature in our next iteration. 
  */
 
 import UIKit

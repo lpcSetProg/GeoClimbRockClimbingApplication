@@ -4,7 +4,7 @@
  * PROGRAMMERS : David Pitters, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
- * This file contains the source code for the table view controller.
+ * This file contains the source code for the TableViewController.
  */
 
 import UIKit
@@ -24,43 +24,34 @@ var routesLocation = ["Kitchener", "Kitchener", "London", "Tobermory", "Kitchene
 var myIndex = 0
 
 class TableViewController: UITableViewController {
-
-
+    
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-       
+        
         return routes.count
     }
     
     
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = routes[indexPath.row]
         cell.selectionStyle = UITableViewCellSelectionStyle.blue
-
+        
         return cell
     }
-
-    // via index selection - you can access item in view controller - - listens for taps on cells -- check if cell already has accessory type
+    
+    // via index selection - you can access item in view controller - - listens for taps on cells.
+    // check if cell already has accessory type
     // place check mark
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-       
         tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
-        
-    
-        
-        
         myIndex = indexPath.row
-       
         performSegue(withIdentifier: "segue_routes", sender: self)
-
     }
     
-    
-
 }

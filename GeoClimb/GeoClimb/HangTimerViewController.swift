@@ -5,9 +5,9 @@
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
  * This file contains the source code for the HangTimerView Controller. It is a simple stop watch widget
- * intended for indoor rock climbing practice. It is constructed using Swift's built in Task Management class:
- * Timer. It also utilizes the button control. This information will eventually be stored in next iteration of
- * project.
+ * intended for indoor rock climbing practice. It is constructed using Swift's built in Task Management
+ * class: Timer. It also utilizes the button control. This information will eventually be stored in next
+ * iteration of project.
  */
 
 import UIKit
@@ -50,8 +50,8 @@ class HangTimerViewController: UIViewController {
         
     }
     
-    // Formats a number to have a maximum of 2 digits
-    //From Igor Pustylnick's WorldTrotter ConversionViewController in Module 4 on econestoga.ca
+    // Formats a number to have a maximum of 2 digits.
+    // From Igor Pustylnick's WorldTrotter ConversionViewController in Module 4 on econestoga.ca
     let numberFormatter: NumberFormatter = {
         let nf = NumberFormatter()
         nf.numberStyle = .decimal
