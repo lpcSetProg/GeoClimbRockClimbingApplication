@@ -4,7 +4,8 @@
  * PROGRAMMERS : David Pitters, Lev Cocarell, Carl Wilson, Bobby Vu
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
- * This file contains the source code for the routes view controller.
+ * This file contains the source code for the RoutesViewController. It is populated via the
+ * table data from the TableViewController.
  */
 
 import UIKit
@@ -12,26 +13,30 @@ import UIKit
 class RoutesViewController: UIViewController {
     
     
-        @IBOutlet weak var output: UILabel!
+    @IBOutlet weak var output: UILabel!
     
-    
-        @IBAction func `switch`(_ sender: UISwitch) {
-                if (sender.isOn == true)
-                {
-                    output.text = "Yes."
-                }
-                else
-                {
-                    output.text = "Unattempted."
-                }
+    // The event handles the 'switch' control which indicates if a
+    // user has ascended (climbed) a route before. We plan on building on this feature
+    // in next iteration.
+    @IBAction func `switch`(_ sender: UISwitch) {
+        if (sender.isOn == true)
+        {
+            output.text = "Yes."
         }
+        else
+        {
+            output.text = "Unattempted."
+        }
+    }
     
-        @IBOutlet weak var label_RoutesTitle: UILabel!
-        @IBOutlet weak var textview_RoutesDesc: UITextView!
-        @IBOutlet weak var imageView_Routes: UIImageView!
-        @IBOutlet weak var label_RoutesHeight: UILabel!
-        @IBOutlet weak var label_RoutesRating: UILabel!
-        @IBOutlet weak var label_RoutesLocation: UILabel!
+    // The labels, image views, and text views are populated depending on what table view items are
+    // selected (as an index)
+    @IBOutlet weak var label_RoutesTitle: UILabel!
+    @IBOutlet weak var textview_RoutesDesc: UITextView!
+    @IBOutlet weak var imageView_Routes: UIImageView!
+    @IBOutlet weak var label_RoutesHeight: UILabel!
+    @IBOutlet weak var label_RoutesRating: UILabel!
+    @IBOutlet weak var label_RoutesLocation: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,14 +47,14 @@ class RoutesViewController: UIViewController {
         label_RoutesRating.text = routesRating[myIndex]
         label_RoutesLocation.text = routesLocation[myIndex]
         imageView_Routes.image = UIImage(named: routes[myIndex] + ".png")
-       
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
