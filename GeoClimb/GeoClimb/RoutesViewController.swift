@@ -12,7 +12,6 @@ import UIKit
 
 class RoutesViewController: UIViewController {
     
-    
     @IBOutlet weak var output: UILabel!
     
     // The event handles the 'switch' control which indicates if a
@@ -37,6 +36,8 @@ class RoutesViewController: UIViewController {
     @IBOutlet weak var label_RoutesHeight: UILabel!
     @IBOutlet weak var label_RoutesRating: UILabel!
     @IBOutlet weak var label_RoutesLocation: UILabel!
+    
+    @IBOutlet weak var infoScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
