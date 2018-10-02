@@ -20,13 +20,14 @@ class HangTimerViewController: UIViewController {
     var time = 0  // var time us used to keep track of user's time
     var timer = Timer() // instantiating Swift's timer class
     
-    // This button starts the hang timer caller by assigning the scheduledTimer method to timer object.
-    // Schedule timer creates a new timer and schedules it on the current run loop. It uses our hangTimeTracker method as the selector, to keep track of user's hang time.
+    // This event starts the hang timer caller by assigning the scheduledTimer method to timer object.
+    // Schedule timer creates a new timer and schedules it on the current run loop.
+    // It uses our hangTimeTracker method as the selector, to keep track of user's hang time.
     @IBAction func button_Start(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HangTimerViewController.hangTimeTracker), userInfo: nil, repeats: true)
     }
     
-    // This button sets the user's hang time to zero, and invalidates the timer method.
+    // This evemt sets the user's hang time to zero, and invalidates the timer method.
     // Invalidate stops the timer from ever firing again and requests its removal from its run loop. - Apple Documentation
     @IBAction func button_Stop(_ sender: Any) {
         time = 0
