@@ -37,10 +37,18 @@ class RoutesViewController: UIViewController {
     @IBOutlet weak var label_RoutesRating: UILabel!
     @IBOutlet weak var label_RoutesLocation: UILabel!
     
+    //Get the internationalization/localization from the appdelegate
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    var locale: Locale?
+    
     @IBOutlet weak var infoScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Set the locale
+        locale = delegate.localeSelector
+        
         // Do any additional setup after loading the view, typically from a nib.
         label_RoutesTitle.text = routes[myIndex]
         textview_RoutesDesc.text = routesDesc[myIndex]
