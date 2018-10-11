@@ -186,17 +186,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fiZ-14-tAT">
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fiZ-14-tAT">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="     Welcome to Geo Climb   The only app you need for optimizing your rock climbing performance " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-5w-zm7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="  Welcome to Geo Climb   The only app you need for optimizing your rock climbing performance " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-5w-zm7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="184.5"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Bs-T7j">
+                                        <rect key="frame" x="0.0" y="184.5" width="375" height="185"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alpaca Hill" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-Wv-GtJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="185"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bouldering1" translatesAutoresizingMaskIntoConstraints="NO" id="sGG-h3-Lvn">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="185"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Quality Overload II  SET - 2018" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSR-bG-1Qx">
-                                        <rect key="frame" x="0.0" y="493" width="375" height="61"/>
+                                        <rect key="frame" x="0.0" y="369.5" width="375" height="184.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -561,7 +572,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Alpaca Hill" width="949" height="730"/>
         <image name="blue" width="1275" height="1941"/>
+        <image name="bouldering1" width="750" height="563"/>
         <image name="wood" width="2500" height="1666"/>
     </resources>
 </document>
