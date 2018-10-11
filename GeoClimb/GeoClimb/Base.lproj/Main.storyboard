@@ -182,65 +182,36 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GeoClimb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="p0D-C1-ERu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="H5y-Sm-cLi">
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fiZ-14-tAT">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Quality Overload II " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56I-eM-l4t">
-                                <rect key="frame" x="1" y="525" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Geo Climb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdE-ub-pa2">
-                                <rect key="frame" x="1" y="130" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentInsetAdjustmentBehavior="always" editable="NO" text="The only app you need for optimizing your rock climbing performance " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eKa-IA-WrF">
-                                <rect key="frame" x="68" y="189" width="240" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="7cb-TH-kKq"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET - 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFH-0x-7xa">
-                                <rect key="frame" x="1" y="561" width="375" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="lnU-xL-epS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="     Welcome to Geo Climb   The only app you need for optimizing your rock climbing performance " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-5w-zm7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Quality Overload II  SET - 2018" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSR-bG-1Qx">
+                                        <rect key="frame" x="0.0" y="493" width="375" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.43710406787756473" green="0.7981367862696912" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="56I-eM-l4t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="461" id="1sJ-R1-ewd"/>
-                            <constraint firstItem="rFH-0x-7xa" firstAttribute="centerX" secondItem="eKa-IA-WrF" secondAttribute="centerX" id="3f6-rA-W8m"/>
-                            <constraint firstAttribute="trailing" secondItem="H5y-Sm-cLi" secondAttribute="trailing" id="44h-U9-7Lg"/>
-                            <constraint firstItem="CdE-ub-pa2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6ue-OV-dgd"/>
-                            <constraint firstItem="rFH-0x-7xa" firstAttribute="centerX" secondItem="CdE-ub-pa2" secondAttribute="centerX" id="AKG-bg-5LP"/>
-                            <constraint firstItem="rFH-0x-7xa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ANo-Y5-Yjf"/>
-                            <constraint firstItem="rFH-0x-7xa" firstAttribute="top" secondItem="56I-eM-l4t" secondAttribute="bottom" constant="15" id="Cov-7B-zOv"/>
-                            <constraint firstItem="eKa-IA-WrF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="Dlc-QJ-mld"/>
-                            <constraint firstItem="eKa-IA-WrF" firstAttribute="top" secondItem="CdE-ub-pa2" secondAttribute="bottom" constant="38" id="OTi-NC-rml"/>
-                            <constraint firstItem="H5y-Sm-cLi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cAp-7e-Ace"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rFH-0x-7xa" secondAttribute="bottom" constant="36" id="dDg-7t-Kbg"/>
-                            <constraint firstItem="H5y-Sm-cLi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dFA-z5-Eqd"/>
-                            <constraint firstItem="56I-eM-l4t" firstAttribute="width" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fys-NF-YjT"/>
-                            <constraint firstItem="CdE-ub-pa2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="q1U-Eb-qSU"/>
-                            <constraint firstItem="56I-eM-l4t" firstAttribute="centerX" secondItem="rFH-0x-7xa" secondAttribute="centerX" id="udL-Id-WGq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eKa-IA-WrF" secondAttribute="trailing" constant="67" id="ws5-C4-VXp"/>
-                            <constraint firstItem="H5y-Sm-cLi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xLR-a6-Qh6"/>
+                            <constraint firstItem="fiZ-14-tAT" firstAttribute="top" secondItem="lwa-sh-JH5" secondAttribute="top" id="EvU-n3-yZ9"/>
+                            <constraint firstItem="lwa-sh-JH5" firstAttribute="bottom" secondItem="fiZ-14-tAT" secondAttribute="bottom" id="Hgv-PA-R3f"/>
+                            <constraint firstItem="lwa-sh-JH5" firstAttribute="trailing" secondItem="fiZ-14-tAT" secondAttribute="trailing" id="Z1f-fw-Ssp"/>
+                            <constraint firstItem="fiZ-14-tAT" firstAttribute="leading" secondItem="lwa-sh-JH5" secondAttribute="leading" id="mt0-dp-WSx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="lwa-sh-JH5"/>
                     </view>
                     <navigationItem key="navigationItem" title="Geo Climb" id="Uuc-dj-rbd"/>
                 </viewController>
