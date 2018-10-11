@@ -10,11 +10,11 @@
 import UIKit
 
 var routes = ["Easy Peasy", "Nomads Cave","Farewell to Arms", "The Goat Face", "Alpaca Hill", ]
-var routesDesc = ["Located near back corner of Grand River Rocks gym in Kitchener. This climbing involves minimal technical moves. Good route for beginners.",
-                  "Located near back corner of Grand River Rocks gym in Kitchener. This climbing involves more complicated technical moves. Good intermediate route. Pay attention.",
-                  "Located near front of London rock climbing gym in Kitchener. This climbing involves very complicated technical moves. Advanced route. Pay very close attention.",
-                  "Located near front of Tobermory rock climbing gym. This climbing involves very complicated technical moves. Advanced route. Good luck -- you will need it!.",
-                  "Located near back corner of Grand River Rocks gym in Kitchener. Super difficult. Bring lunch -- you will be there all day."]
+var routesDesc = [NSLocalizedString("easypeasy_description", comment:""),
+                  NSLocalizedString("nomadscave_description", comment:""),
+                  NSLocalizedString("farewelltoarms_description", comment:""),
+                  NSLocalizedString("thegoatface_description", comment:""),
+                  NSLocalizedString("alpacahill_description", comment:"")]
 var routesHeight = ["5 meters", "6 meters", "9 meters", "4 Meters", "3.4 Meters"]
 var routesRating = ["5.5", "5.7", "5.11a+", "5.10a", "5.10c"]
 var routesLocation = ["Kitchener", "Kitchener", "London", "Tobermory", "Kitchener"]
