@@ -40,7 +40,7 @@ class HangTimerViewController: UIViewController {
         if (paused){
             //Reset the timer
             time = 0.00
-            label_Time.text = ("0.00")
+            label_Time.text = ("0")
             paused = false
         } else {
             timer.invalidate()
@@ -71,6 +71,7 @@ class HangTimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        label_Time.font = UIFont.monospacedDigitSystemFont(ofSize: 40, weight: UIFont.Weight.regular)
     }
     
     override func didReceiveMemoryWarning() {
