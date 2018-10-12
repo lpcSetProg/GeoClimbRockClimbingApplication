@@ -18,7 +18,7 @@
 "8gW-aA-T9X.text" = "Étiquette";
 
 /* Class = "UITabBarItem"; title = "Hang Timer"; ObjectID = "BVr-h1-IyU"; */
-"BVr-h1-IyU.title" = "Suspendre la minuterie";
+"BVr-h1-IyU.title" = "Minuteur";
 
 /* Class = "UILabel"; text = "Height: "; ObjectID = "E1j-EF-E3V"; */
 "E1j-EF-E3V.text" = "Hauteur: ";
