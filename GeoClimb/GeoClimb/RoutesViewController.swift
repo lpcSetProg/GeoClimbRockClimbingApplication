@@ -20,11 +20,11 @@ class RoutesViewController: UIViewController {
     @IBAction func `switch`(_ sender: UISwitch) {
         if (sender.isOn == true)
         {
-            output.text = "Yes."
+            output.text = NSLocalizedString("Yes_text", comment:"")
         }
         else
         {
-            output.text = "Unattempted."
+            output.text = NSLocalizedString("Unattempted_text", comment:"")
         }
     }
     

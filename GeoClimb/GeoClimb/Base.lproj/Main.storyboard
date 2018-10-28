@@ -312,7 +312,7 @@
                                     <action selector="button_Stop:" destination="rAM-1x-d1Q" eventType="touchUpInside" id="iWX-E8-O4i"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How long can you hang on for?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuH-Jy-KaQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long can you hang on for?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuH-Jy-KaQ">
                                 <rect key="frame" x="80" y="128" width="216" height="65"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -333,7 +333,9 @@
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FOB-Ng-WBb" firstAttribute="trailing" secondItem="NVg-Kb-7fo" secondAttribute="trailing" id="52a-B2-Lf9"/>
+                            <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="vuH-Jy-KaQ" secondAttribute="trailing" constant="79" id="6Gr-K0-Igk"/>
                             <constraint firstItem="FYk-Qn-acn" firstAttribute="bottom" secondItem="NVg-Kb-7fo" secondAttribute="bottom" constant="241" id="9F1-Yu-Wqs"/>
+                            <constraint firstItem="vuH-Jy-KaQ" firstAttribute="leading" secondItem="FYk-Qn-acn" secondAttribute="leading" constant="80" id="Acl-KF-ssz"/>
                             <constraint firstItem="FOB-Ng-WBb" firstAttribute="bottom" secondItem="FYk-Qn-acn" secondAttribute="bottom" id="CRZ-iZ-svW"/>
                             <constraint firstItem="NVg-Kb-7fo" firstAttribute="leading" secondItem="0vU-DW-c0u" secondAttribute="leading" id="Kyl-xJ-kgk"/>
                             <constraint firstItem="FYk-Qn-acn" firstAttribute="trailing" secondItem="xfR-wd-avb" secondAttribute="trailing" constant="33" id="NRH-jp-IVj"/>
@@ -341,6 +343,8 @@
                             <constraint firstItem="6F8-0W-rNC" firstAttribute="width" secondItem="0vU-DW-c0u" secondAttribute="width" multiplier="0.5" id="PYs-rG-9Ua"/>
                             <constraint firstItem="6F8-0W-rNC" firstAttribute="leading" secondItem="NVg-Kb-7fo" secondAttribute="leading" id="QpO-Xk-Btk"/>
                             <constraint firstItem="FOB-Ng-WBb" firstAttribute="top" secondItem="NVg-Kb-7fo" secondAttribute="bottom" id="RuJ-9A-jfl"/>
+                            <constraint firstItem="vuH-Jy-KaQ" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="64" id="Sip-81-nZE"/>
+                            <constraint firstItem="xfR-wd-avb" firstAttribute="top" secondItem="vuH-Jy-KaQ" secondAttribute="bottom" constant="31" id="TVk-Mx-NC5"/>
                             <constraint firstItem="FOB-Ng-WBb" firstAttribute="leading" secondItem="6F8-0W-rNC" secondAttribute="trailing" id="Yr7-ck-rN5"/>
                             <constraint firstItem="6F8-0W-rNC" firstAttribute="firstBaseline" secondItem="FOB-Ng-WBb" secondAttribute="baseline" id="dqv-vQ-cOr"/>
                             <constraint firstItem="vuH-Jy-KaQ" firstAttribute="top" secondItem="FYk-Qn-acn" secondAttribute="top" constant="64" id="ebt-kL-9Sw"/>
