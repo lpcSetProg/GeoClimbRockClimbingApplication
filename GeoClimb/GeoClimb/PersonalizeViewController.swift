@@ -11,7 +11,7 @@
 
 import UIKit
 
-extension UIViewController{
+extension PersonalizeViewController{
     
     func HideKeyboard() {
         //Looks for single or multiple taps.
@@ -26,7 +26,7 @@ extension UIViewController{
     }
 }
 
-class PersonalizeViewController: UIViewController {
+class PersonalizeViewController: UIViewController, UITextFieldDelegate {
   
     @IBOutlet weak var label_Name: UILabel!
     @IBOutlet weak var label_Location: UILabel!
@@ -55,12 +55,22 @@ class PersonalizeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         label_Name.isHidden = true
         label_Location.isHidden = true
+        
+        //Set the text field delegates
+        textField_name.delegate = self
+        textField_Location.delegate = self
+        
         self.HideKeyboard();
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 
