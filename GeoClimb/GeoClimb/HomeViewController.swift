@@ -5,7 +5,7 @@
  * FIRST VERSION : 2018-09-15
  * DESCRIPTION :
  * This file contains the source code for the HomeViewController which currently acts as our home
- * page. This page is purely read only right now - but we plan on doing more with it in the future.
+ * page.
  */
 
 import UIKit
@@ -15,6 +15,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //let menuController = UIMenuController.shared
+        //menuController.arrowDirection = UIMenuControllerArrowDirection.down
+        
+        //menuController.setTargetRect(CGRect(x: self.view.center.x, y: self.view.center.y, width: 100, height: 100), in: self.view)
+        //menuController.setMenuVisible(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FFC8FF9216FD8F600F9A299 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC8FFB216FD8F600F9A299 /* Localizable.strings */; };
+		4F14EF4621B5A8D500ABE447 /* SelectableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14EF4521B5A8D500ABE447 /* SelectableLabel.swift */; };
 		4F196AA42141B176004A4E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AA32141B176004A4E87 /* AppDelegate.swift */; };
 		4F196AA62141B176004A4E87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F196AA52141B176004A4E87 /* HomeViewController.swift */; };
 		4F196AA92141B176004A4E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F196AA72141B176004A4E87 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		3FFC8FF6216FD36300F9A299 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3FFC8FFA216FD8F600F9A299 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3FFC8FFC216FD8FA00F9A299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F14EF4521B5A8D500ABE447 /* SelectableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableLabel.swift; sourceTree = "<group>"; };
 		4F196AA02141B176004A4E87 /* GeoClimb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoClimb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F196AA32141B176004A4E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F196AA52141B176004A4E87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				4F56BB642156A1EF00857B50 /* LogViewController.swift */,
 				4F5C6845215FD74C002C5339 /* TabBarController.swift */,
 				3FFC8FFB216FD8F600F9A299 /* Localizable.strings */,
+				4F14EF4521B5A8D500ABE447 /* SelectableLabel.swift */,
 			);
 			path = GeoClimb;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				B222A30D2160095A009BE833 /* TableViewController.swift in Sources */,
 				B215AA8D21626E0A00573A60 /* PersonalizeViewController.swift in Sources */,
 				4F196AA42141B176004A4E87 /* AppDelegate.swift in Sources */,
+				4F14EF4621B5A8D500ABE447 /* SelectableLabel.swift in Sources */,
 				4F196AAC2141B176004A4E87 /* GeoClimb.xcdatamodeld in Sources */,
 				B222A30F21600993009BE833 /* RoutesViewController.swift in Sources */,
 				4F5C6846215FD74C002C5339 /* TabBarController.swift in Sources */,
