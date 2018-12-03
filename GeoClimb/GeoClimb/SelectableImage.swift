@@ -8,7 +8,7 @@
 // BASED OFF OF A SOLUTION FROM https://stephenradford.me/make-uilabel-copyable/
 import UIKit
 
-class SelectableLabel: UILabel {
+class SelectableImage: UIImageView {
     
     override public var canBecomeFirstResponder: Bool {
         return true
@@ -26,7 +26,6 @@ class SelectableLabel: UILabel {
     
     func sharedInit() {
         isUserInteractionEnabled = true
-        highlightedTextColor = UIColor(displayP3Red: 0, green: 0.0, blue: 1.0, alpha: 1.0)
         
         addGestureRecognizer(UILongPressGestureRecognizer(
             target: self,
@@ -41,7 +40,7 @@ class SelectableLabel: UILabel {
     }
     
     override func copy(_ sender: Any?) {
-        UIPasteboard.general.string = text
+        UIPasteboard.general.image = image
         UIMenuController.shared.setMenuVisible(false, animated: true)
     }
     
