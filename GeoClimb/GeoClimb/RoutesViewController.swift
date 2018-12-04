@@ -129,9 +129,11 @@ class RoutesViewController: UIViewController {
                 if (isAscended){
                     //Set the route as ascended in the UI
                     switch_Ascended.isOn = true
+                    output.text = NSLocalizedString("Yes_text", comment:"")
                 }
                 else{
                     switch_Ascended.isOn = false
+                    output.text = NSLocalizedString("Unattempted_text", comment:"")
                 }
             }
             catch {
@@ -142,6 +144,7 @@ class RoutesViewController: UIViewController {
         }
         else{
             switch_Ascended.isOn = false
+            output.text = NSLocalizedString("Unattempted_text", comment:"")
         }
     }
     
