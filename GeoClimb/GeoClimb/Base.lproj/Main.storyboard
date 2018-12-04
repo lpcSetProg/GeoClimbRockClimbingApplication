@@ -560,6 +560,7 @@
                         <outlet property="label_RoutesRating" destination="qN6-bT-YqJ" id="DG0-jf-qJS"/>
                         <outlet property="label_RoutesTitle" destination="Yie-mA-UKu" id="ccQ-1p-HxB"/>
                         <outlet property="output" destination="bYn-v4-WJj" id="q9w-XT-Flm"/>
+                        <outlet property="switch_Ascended" destination="qDC-L7-RAb" id="D3j-TP-Nud"/>
                         <outlet property="textview_RoutesDesc" destination="SCc-eM-zNd" id="a9r-Vw-4uz"/>
                     </connections>
                 </viewController>
