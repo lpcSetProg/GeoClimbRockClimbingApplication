@@ -8,6 +8,8 @@
 	<string>$(PRODUCT_NAME) This lets the user save images to their camera roll</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>$(PRODUCT_NAME) photo lib  addition usage</string>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) camera usage permission</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
