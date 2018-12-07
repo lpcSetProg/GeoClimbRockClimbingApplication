@@ -184,28 +184,35 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="  Welcome to Geo Climb   The only app you need for optimizing your rock climbing performance " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-5w-zm7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="184.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Bs-T7j">
-                                        <rect key="frame" x="0.0" y="184.5" width="375" height="185"/>
+                                        <rect key="frame" x="0.0" y="138.5" width="375" height="138.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alpaca Hill" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-Wv-GtJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="185"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="138.5"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bouldering1" translatesAutoresizingMaskIntoConstraints="NO" id="sGG-h3-Lvn">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="185"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="138.5"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Quality Overload II  SET - 2018" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSR-bG-1Qx">
-                                        <rect key="frame" x="0.0" y="369.5" width="375" height="184.5"/>
+                                        <rect key="frame" x="0.0" y="277" width="375" height="138.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO7-cf-xwp">
+                                        <rect key="frame" x="0.0" y="415.5" width="375" height="138.5"/>
+                                        <state key="normal" title="Find Your Closest Local Rock Climbing Gym "/>
+                                        <connections>
+                                            <segue destination="IfG-Vm-or2" kind="show" id="W13-59-zaN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -223,6 +230,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="421.60000000000002" y="35.532233883058474"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="xZo-vz-HCa">
+            <objects>
+                <viewController id="IfG-Vm-or2" customClass="MapViewController" customModule="GeoClimb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="008-1D-jP2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mUW-54-JTf">
+                                <rect key="frame" x="0.0" y="114" width="375" height="459"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mUW-54-JTf" firstAttribute="top" secondItem="ztf-CI-PEL" secondAttribute="top" constant="50" id="EGx-5c-nGJ"/>
+                            <constraint firstItem="mUW-54-JTf" firstAttribute="leading" secondItem="ztf-CI-PEL" secondAttribute="leading" id="YEv-iS-P6e"/>
+                            <constraint firstItem="mUW-54-JTf" firstAttribute="trailing" secondItem="ztf-CI-PEL" secondAttribute="trailing" id="vCU-bG-SMy"/>
+                            <constraint firstItem="ztf-CI-PEL" firstAttribute="bottom" secondItem="mUW-54-JTf" secondAttribute="bottom" constant="45" id="w1G-8Y-U3K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ztf-CI-PEL"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="mUW-54-JTf" id="blo-qg-4pp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNV-gq-GWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1332" y="35.532233883058474"/>
         </scene>
         <!--Home-->
         <scene sceneID="lHW-J5-FlM">
