@@ -44,18 +44,25 @@ class SelectableImage: UIImageView {
         UIMenuController.shared.setMenuVisible(false, animated: true)
     }
     
+    
     @objc func showMenu(sender: Any?) {
         isHighlighted = true
         becomeFirstResponder()
         let menu = UIMenuController.shared
+        let saveImage = UIMenuItem(title: "Save Image", action: #selector(save))
+        menu.menuItems = [saveImage]
         if !menu.isMenuVisible {
             menu.setTargetRect(bounds, in: self)
             menu.setMenuVisible(true, animated: true)
         }
     }
     
+    @objc func save() {
+        UIImageWriteToSavedPhotosAlbum(self.image!, nil, nil, nil);
+    }
+    
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        return (action == #selector(copy(_:)))
+        return (action == #selector(copy(_:)) || action == #selector(save))
     }
     
     @objc func didHideEditMenu(sender: Any?) {
