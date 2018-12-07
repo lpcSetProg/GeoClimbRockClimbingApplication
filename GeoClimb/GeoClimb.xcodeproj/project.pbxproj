@@ -233,13 +233,16 @@
 				TargetAttributes = {
 					4F196A9F2141B176004A4E87 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					4F196AB62141B177004A4E87 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 4F196A9F2141B176004A4E87;
 					};
 					4F196AC12141B177004A4E87 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 4F196A9F2141B176004A4E87;
 					};
 				};
